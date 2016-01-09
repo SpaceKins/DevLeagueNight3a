@@ -23,12 +23,24 @@ function isNotEqual(firstWord, secondWord){
 }
 
 function doubleEquals(firstWord, secondWord){
-	return (firstWord&&secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+	return (firstWord && secondWord);
 }
 
-function isEqual(firstWord, secondWord){
-	return (firstWord===secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+function totalOver30(first, second, third){
+	return ((first + second + third)>30);
 }
+
+function totalUnderWhat(first, second, third, fourth){
+	return ((first + second + third)<fourth);
+}
+
+function looptoNumber(limit){
+	for(var i=0;i<limit;i++)
+	{
+		console.log(i);
+	}
+}
+
 
 
 
