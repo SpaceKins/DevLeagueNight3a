@@ -41,8 +41,31 @@ function looptoNumber(limit){
 	}
 }
 
+function showEachValue(characters){
+	var charactersCount=characters.length;
 
+	for(var i=0;i<charactersCount;i++)
+	{
+		console.log(characters[i]);
+	}
+}
 
+function createArrayFromString(word){
+	var wordCount=word.length;
+	var newArray=[];
+
+	for(var i=0;i<wordCount;i++)
+	{
+		if(word[i]!=='a')
+		{
+			newArray.push(word[i]);
+		}
+	}
+
+	console.log(newArray);
+}
+
+createArrayFromString("test");
 
 
 
