@@ -7,11 +7,11 @@ function isNumberGreaterThan(first, second){
 }
 
 function isTrue(val){
-	return val;
+	return (val==true);
 }
 
 function isFalse(val){
-	return val;
+	return (val==false);
 }
 
 function isEqual(firstWord, secondWord){
@@ -65,10 +65,46 @@ function createArrayFromString(word){
 	console.log(newArray);
 }
 
-createArrayFromString("test");
+function greatSummator(numberList){
+	var numberListCount=numberList.length;
+	var resultSum=0;
+
+	for(var i=0;i<numberListCount;i++)
+	{
+		resultSum+=numberList[i];
+	}
+
+	return resultSum;
+}
+
+function totalUnderWhatFor(numberList, total){
+	return (greatSummator(numberList)<total);
+}
+
+function checkTrueValues(boolList){
+	var boolListCount=boolList.length;
+	var lastBool=true;
+
+	for(var i=0;i<boolListCount;i++)
+	{
+		lastBool =doubleEquals(isTrue(boolList[i]),lastBool);
+	}
+
+	return (lastBool);
+}
+
+createArrayFromString("testaTest");
+console.log(greatSummator([1,2,3,4,5]));
+
+console.log(totalUnderWhatFor([1,2,3,4,5],15));
 
 
 
 
 console.log(youGetTaco("eat"));
 console.log(isNumberGreaterThan(3,10));
+
+console.log(isTrue(1/'a'));
+console.log(isFalse(1/'a'));
+
+console.log(checkTrueValues([true,true,false]));
