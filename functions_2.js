@@ -7,11 +7,11 @@ function isNumberGreaterThan(first, second){
 }
 
 function isTrue(val){
-	return (val==true);
+	return (!!val);
 }
 
 function isFalse(val){
-	return (val==false);
+	return !(isTrue(val));
 }
 
 function isEqual(firstWord, secondWord){
@@ -107,4 +107,25 @@ console.log(isNumberGreaterThan(3,10));
 console.log(isTrue(1/'a'));
 console.log(isFalse(1/'a'));
 
-console.log(checkTrueValues([true,true,false]));
+console.log(checkTrueValues([true,true,1,'a']));
+
+console.log("Verify Values");
+console.log(isTrue(false));
+console.log(isTrue(0));
+console.log(isTrue(""));
+console.log(isTrue(null));
+console.log(isTrue(undefined));
+console.log(isTrue(NaN));
+
+console.log(isTrue(1));
+console.log(isTrue("f"));
+console.log(isTrue("NaN"));
+console.log(isTrue(null));
+
+console.log("Verify Values");
+console.log(isFalse(false));
+console.log(isFalse(0));
+console.log(isFalse(""));
+console.log(isFalse(null));
+console.log(isFalse(undefined));
+console.log(isFalse(NaN));
