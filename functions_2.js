@@ -14,6 +14,22 @@ function isFalse(val){
 	return val;
 }
 
+function isEqual(firstWord, secondWord){
+	return (firstWord===secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+}
+
+function isNotEqual(firstWord, secondWord){
+	return (firstWord!==secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+}
+
+function doubleEquals(firstWord, secondWord){
+	return (firstWord&&secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+}
+
+function isEqual(firstWord, secondWord){
+	return (firstWord===secondWord?'AWWWWRIGHT':'Y U NO MATCH!');
+}
+
 
 
 
