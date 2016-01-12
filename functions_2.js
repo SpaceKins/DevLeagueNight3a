@@ -10,6 +10,7 @@ function isTrue(val){
 	return (!!val);
 }
 
+
 function isFalse(val){
 	return !(isTrue(val));
 }
@@ -87,7 +88,7 @@ function checkTrueValues(boolList){
 
 	for(var i=0;i<boolListCount;i++)
 	{
-		lastBool =doubleEquals(isTrue(boolList[i]),lastBool);
+		lastBool =doubleEquals(isTrue(boolList[i]),lastBool);	
 	}
 
 	return (lastBool);
