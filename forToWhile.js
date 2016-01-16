@@ -4,31 +4,30 @@
 // http://www.buzzfeed.com/jessicamisener/the-10-best-chewbacca-quotes
 
 
-var starWarsMovies = [ 'anh', 'tesb', 'rotj', 'tpm', 'aotc', 'rots', 'tfa'];
+var starWarsMovies = ['anh', 'tesb', 'rotj', 'tpm', 'aotc', 'rots', 'tfa'];
 
 function sortChronologically() {
-	var i = 0;
-	while(i<3)
-	{
-		var tmp = starWarsMovies[i];
-		starWarsMovies[i] = starWarsMovies[i + 3];
-		starWarsMovies[i + 3] = tmp;   
+    var i = 0;
+    while (i < 3) {
+        var tmp = starWarsMovies[i];
+        starWarsMovies[i] = starWarsMovies[i + 3];
+        starWarsMovies[i + 3] = tmp;
 
-		i++;
-	}
+        i++;
+    }
 }
 
 function chewie() {
     var i = 0;
-    while(i < starWarsMovies.length) {
+    while (i < starWarsMovies.length) {
         if (starWarsMovies[i] === 'tesb' || starWarsMovies[i] === 'aotc') {
             console.log('GGWWWRGHH');
         } else {
             console.log('Laugh it up fuzzball!');
-        }   
+        }
 
         i++;
-    }   
+    }
 }
 
 /*function sortChronologically() {
